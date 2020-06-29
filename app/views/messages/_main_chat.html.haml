@@ -1,0 +1,29 @@
+.main-chat
+  .main-header
+    .main-header__group
+      .main-header__group__group-name
+        test
+      .main-header__group__group-member
+        Member:masa
+    .main-header__edit
+      =link_to "#" , class: "edit-btn" do
+        Edit
+  .messages
+    .messages-area
+      .messages-area__name-date
+        .messages-area__name-date__name
+          masa
+        .messages-area__name-date__date
+          2020/06/26(Fri.) 18:00:00
+      .messages-area__comment
+        おはよう！
+
+  .form
+    .messages-form
+      %input.messages-form__comment{placeholder: "type a message",type: "text"}
+        
+      %label{class: "messages-form__image-btn"}
+        = icon('fas', 'images')
+        %input{type: "file"}
+    .send-btn
+      SEND
