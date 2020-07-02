@@ -42,16 +42,20 @@
     .groups{
       height: calc(100vh - 100px);
       background-color: #2f3e51;
+      
       &__area{
-        color: #ffffff;
         padding: 0 20px;
         &__name{
           font-size: 15px;
+          color: #ffffff;
           padding: 20px 0 5px 0;
+          //text-decoration: none;
         }
         &__message{
           font-size: 11px;
+          color: #ffffff;
           padding-bottom: 40px;
+          //text-decoration: none;
         }
       }
     }
@@ -70,7 +74,6 @@
       justify-content: space-between;
         &__group{
           height: 100px;
-          width:100px;
           padding-left: 40px;
           &__group-name{
             color: #333333;
@@ -128,40 +131,45 @@
       display: flex;
       justify-content: space-between;
       
-    
-      .messages-form{
-        width: 100%;
-        margin: 20px 15px 25px;
-        position: relative;
+      .Form{
         display: flex;
-        justify-content: space-between;
-        &__comment{
-          height: 50px;
+        width: 100%;
+      }
+    
+        .messages-form{
           width: 100%;
-          color: #434a54;
-          border-style: none;
-          padding: 0 40px 0 10px;
-        }
-        &__image-btn{
-          position: absolute;
-          top: 10px;
-          right: 10px;
-          input{
-            display: none;
+          margin: 20px 15px 25px;
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          &__comment{
+            height: 50px;
+            width: 100%;
+            color: #434a54;
+            border-style: none;
+            padding: 0 40px 0 10px;
+          }
+          &__image-btn{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 22px;
+            input{
+              display: none;
+            }
           }
         }
-      }
 
-      .send-btn{
-        padding: 0 30px;
-        width: 100px;
-        height: 50px;
-        margin: 20px 40px 0 0;
-        font-size: 16px;
-        line-height: 50px;
-        background-color: #38aef0;
-        color:#fff;
-      }
+        .send-btn{
+          padding: 0 30px;
+          width: 100px;
+          height: 50px;
+          margin: 20px 40px 0 0;
+          font-size: 16px;
+          line-height: 50px;
+          background-color: #38aef0;
+          color:#fff;
+        }
     }
   }
 }
