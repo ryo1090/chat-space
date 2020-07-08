@@ -38,7 +38,6 @@ $(function() {
     })
     .done(function(users) {
       $("#UserSearchResult").empty();
-      debugger
       if (users.length !== 0) {
         users.forEach(function(user) {
           addUser(user);
